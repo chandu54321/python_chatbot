@@ -1,0 +1,7 @@
+flask
+pymongo
+bson
+python-dotenv
+more-itertools
+requests
+nltk

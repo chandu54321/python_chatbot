@@ -4,3 +4,4 @@ python-dotenv
 more-itertools
 requests
 nltk
+flask-cors

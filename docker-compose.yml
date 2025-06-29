@@ -13,11 +13,11 @@ services:
     volumes:
       - mongodb_data:/data/db
 
-  backend:
+  backned:
     build:
-      context: ./backend
+      context: ./backned
       dockerfile: Dockerfile
-    container_name: flask_backend
+    container_name: flask_backned
     restart: unless-stopped
     ports:
       - "5000:5000"
@@ -36,7 +36,7 @@ services:
     ports:
       - "80:80"
     depends_on:
-      - backend
+      - backned
 
 volumes:
   mongodb_data:
